@@ -1,4 +1,4 @@
-public class GetterNumbersFromString {
+class GetterNumbersFromString {
     private static final int[] numbers = new int[2];
     private static boolean flag = false; // if false then Roman, else Arabic
     public static int[] getNumbers(String line){

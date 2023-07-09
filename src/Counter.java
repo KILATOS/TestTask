@@ -1,4 +1,4 @@
-public class Counter {
+class Counter {
     private static int result;
     public static int count(int[] numbers) {
         try {

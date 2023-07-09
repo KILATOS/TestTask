@@ -1,4 +1,4 @@
-public class OperatorCounter {
+class OperatorCounter {
     private static int operatorAmount;
     private static char operator = ' ';
     public static void count(String line) {
