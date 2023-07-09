@@ -1,6 +1,6 @@
 class Counter {
     private static int result;
-    public static int count(int[] numbers) {
+    public static int calc(int[] numbers) {
         try {
             result = switch (OperatorCounter.getOperator()) {
                 case '+' -> numbers[0] + numbers[1];

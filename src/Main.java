@@ -7,7 +7,7 @@ public class Main {
             line = scanner.nextLine();
         }
         OperatorCounter.count(line); //operator counting
-        int result = Counter.count(GetterNumbersFromString.getNumbers(line));
+        int result = Counter.calc(GetterNumbersFromString.getNumbers(line));
         System.out.println(GetterNumbersFromString.isFlag() ? result : RomanNumeral.arabicToRoman(result));
     }
 }
