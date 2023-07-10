@@ -7,15 +7,17 @@ class GetterNumbersFromString {
         int i = 0;
         int checker = 0;
         for (String element : arrayOfLine) {
-            if (Character.isLetter(element.charAt(0))) {
-                numbers[i] = RomanNumeral.romanToArabic(element);
-                i++;
-                checker++;
-            } else if (Character.isDigit(element.charAt(0))) {
-                numbers[i] = Integer.parseInt(element);
-                i++;
-                checker--;
-                flag = true;
+            if (i<=1) {
+                if (Character.isLetter(element.charAt(0))) {
+                    numbers[i] = RomanNumeral.romanToArabic(element);
+                    i++;
+                    checker++;
+                } else if (Character.isDigit(element.charAt(0))) {
+                    numbers[i] = Integer.parseInt(element);
+                    i++;
+                    checker--;
+                    flag = true;
+                }
             }
         }
         if (Math.abs(checker) != 2) {
